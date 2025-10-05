@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- منع نسخ البيانات الحساسة -->
+        <exclude domain="sharedpref" path="secure_prefs.xml"/>
+        <exclude domain="database" path="sensitive_data.db"/>
+        <exclude domain="file" path="private_keys/"/>
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- منع نقل بيانات حساسة عند تنصيب التطبيق على جهاز جديد -->
+        <exclude domain="sharedpref" path="secure_prefs.xml"/>
+        <exclude domain="database" path="sensitive_data.db"/>
+    </device-transfer>
+</data-extraction-rules>

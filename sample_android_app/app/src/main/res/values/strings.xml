@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Play Ready App</string>
+    <string name="welcome_message">مرحباً بك في التطبيق!</string>
+    <string name="sample_description">هذا تطبيق نموذجي جاهز للنشر على جوجل بلاي</string>
+    <string name="start_button">ابدأ الاستخدام</string>
+    <string name="privacy_policy_url">https://your-website.com/privacy</string>
+    <string name="terms_of_service_url">https://your-website.com/terms</string>
+    <string name="contact_email">contact@your-domain.com</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- تأمين الاتصالات -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- الاعتماد على شهادات النظام فقط -->
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+    
+    <!-- إعدادات خاصة بالمجال (اختياري) -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">your-api-domain.com</domain>
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </domain-config>
+    
+    <!-- فقط للتطوير - احذف هذا في الإصدار النهائي -->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="system"/>
+            <certificates src="user"/>
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>
